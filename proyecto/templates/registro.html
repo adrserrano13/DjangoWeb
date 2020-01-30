@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href='{% static "myStyle2.css" %}'>
+	</head>
+
+	<body>
+
+		<div class="encabezado">
+		<span><img src="{% static "logo.png"%}" alt="logo" width="18%" height="100%"></span>
+		<span class="botonesEncabezado" style="position:absolute;left:700px;top:70px">CONTACTA</span>
+		<span class="botonesEncabezado" style="position:absolute;left:1000px;top:70px">UBICACIÓN</span>
+		<span class="botonesEncabezado" style="position:absolute;left:1300px;top:70px">REGISTRO</span>
+	</div>
+
+		<div class="contenedor">
+
+		
+		<form action="registro" method="get">
+			<span class="titulo"><h1>REGISTRO USUARIO:</h1></span>
+			<span class="registro">Usuario: <input type="text" name="user" required></span>
+			<span class="registro">Contraseña: <input type="password" name="pwd" required></span>
+			<span class="boton"> <input type="submit" value="registrarse"></span>
+			<a href="http://localhost:8000/inicio/" method="get">Volver</a></span>
+		</form>
+
+	</div>
+
+	</body>
+</html>

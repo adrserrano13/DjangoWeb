@@ -1,0 +1,34 @@
+/*****************BARRA SUPERIOR PAGINA********************/
+.encabezado{display:inline-block;height:146px;width:100%;background-color:lightcoral;position:static;margin-top:20;margin-left:30px;margin-right:10px;}
+.botonesEncabezado{width:auto;height:auto;display:inline-block;background-color:#696969;border-style:inset;color:#FFF5EE;font-size:35px;text-align:center;}
+.registro{display:grid;position:absolute;left:1700px;top:45px;;color:#FFF5EE;}
+.reg{position:absolute;left:1900px;top:120px;color:#FFF5EE;display:grid}
+.entrar{position:absolute;left:1900px;top:70px;color:#FFF5EE;display:grid}
+.recordar{position:absolute;left:1900px;top:125px;color:#FFF5EE;}
+/*****************Buscador central de restaurantes*********/
+.eslogan{position:absolute;float:left;margin-left:300px; top:250px;color:#8B0000;font-size:30px;letter-spacing:8px;}
+.buscador{border-style:solid;border-color:silver;width:1400px;height:40px;margin-left:300px;position:absolute;top:400px;}
+.letras1{float:left;color:silver;font-size:30px;}
+.letras2{float:right;color:silver;font-size:30px;}
+/*****************Contenedor de las fotos(difentes ciudades)***************/
+.contenedorFotos{position:absolute;border-style:inset;border-color:#8B0000;border-width:9px;border-radius:10px; width:68%;height:1400px;top:500px;
+margin-left:300px;background-color:	#FFF5EE;}
+.fotos{display:inline-block;position:relative;width:600px;height:650px;margin-left:140px;margin-top:60px;font-size:30px;text-align:center;color:#8B0000;}
+
+/****************Diferenciacion de restaurantes***************************/
+.linea{height:10px;position:absolute;margin-top:1940px;width:102%;}
+.descubre{position:absolute;margin-top:1870px;margin-left:829px;font-size:50px;color:#8B0000;font-family:helvetica;letter-spacing:10px; }
+.masPopul{position:absolute;width:600px;margin-top:1950px;margin-left:320px;width:300px;height:300px;font-size:20px;text-align:center;}
+.descubrirNuevos{position:absolute;width:600px;margin-top:1950px;margin-left:850px;width:300px;height:300px;font-size:20px;text-align:center;}
+.promociones{position:absolute;width:600px;margin-top:1950px;margin-left:1400px;width:300px;height:300px;font-size:20px;text-align:center;}
+/****************BARRA INFERIOR PAGINA**************************/
+.contacto{display:inline-block;height:170px;width:100%;background-color:lightcoral;position:absolute;top:2550px;left:30px;right:30px;}
+.datos{display:grid;color:#FFF5EE;margin-left:80px;}
+.instagram{display:inline-block;width:200px;height:120px;position:absolute;bottom:20px;right:1350px;}
+.facebook{display:inline-block;width:200px;height:120px;position:absolute;bottom:20px;right:980px;}
+.twitter{display:inline-block;width:200px;height:120px;position:absolute;bottom:20px;right:600px;}
+.nuevoRest{display:grid;position:absolute;bottom:30px;right:100px;color:#FFF5EE;margin-right:20px;}
+
+/****************IMAGEN DE FONDO**********************************/
+
+body{background-image:url("fondo.jpg");background-repeat:repeat;background-position:40%60%;background-size:110%;}

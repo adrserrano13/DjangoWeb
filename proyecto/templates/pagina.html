@@ -1,0 +1,77 @@
+ <html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static "myStyle.css"%}">
+
+	</head>
+
+	<body>
+
+			<div class="encabezado">
+
+				<img src="{% static "logo.png"%}" alt="logo" width="18%" height="100%">
+				<span class="botonesEncabezado" style="position:absolute;left:700px;top:70px">CONTACTA</span>
+				<span class="botonesEncabezado" style="position:absolute;left:1000px;top:70px">UBICACIÓN</span>
+				<span class="botonesEncabezado" style="position:absolute;left:1300px;top:70px">REGISTRO</span>
+
+			<form acton="login" method="get">
+				{%if x == True%}	
+				
+		        	<span class="registro">Usuario: <input type="text" name="nombre">Contraseña: <input type="password" name="contrasena"></span>
+					<span class="entrar"><input type="submit" value="entrar"></span>
+		        	<span class="reg"><a href="http://localhost:8000/registro/" method="get">Registrarse</a><span>
+
+
+
+	       		{%else%}
+
+	        		BIENVENIDO {{usuario}}
+	        		<a href="http://localhost:8000/inicio/" method="get">Cerrar sesion</a></span>
+	        	
+	        	{%endif%}
+	        </form>
+
+			</div>
+
+			<div class="eslogan">Descubre y reserva <br>el mejor restaurante</div>
+
+			<div class="buscador">
+
+				<span class="letras1">Buscar dirección,nombre,restaurante...</span>
+				<span class="letras2">|FECHA|HORA|Nº PESONAS</span>
+
+			</div>
+
+			<div class="contenedorFotos">
+
+				<span class="fotos">RESTAURANTES EN ALICANTE <a href="http://localhost:8000/restaurante/?ciu=alicante"><img src="{% static "alicante.jpg" %}" alt="Alicante" width="100%" height="75%"></a></span>
+				<span class="fotos">RESTAURANTES EN VALENCIA <a href="http://localhost:8000/restaurante/?ciu=valencia"><img src="{% static "valencia.jpg"%}" alt="Valencia" width="100%" height="75%"></a></span>
+				<span class="fotos">RESTAURANTES EN BARCELONA <a href="http://localhost:8000/restaurante/?ciu=barcelona"><img src="{%static "barcelona.jpg"%}" alt="Barcelona" width="100%" height="75%"></a></span>
+				<span class="fotos">RESTAURANTES EN MADRID <a href="http://localhost:8000/restaurante/?ciu=madrid"><img src="{% static "madrid.jpg" %}" alt="Madrid" width="100%"height="75%"></a></span>
+
+			</div>
+
+			<div class="linea"><hr></div>
+			<div class="descubre"><b>DESCUBRE<b></div>
+			<div class="masPopul">Los más populares<img src="{% static "mejVal.jpg" %}" alt="Mejores valoraciones" width="100%"height="75%"></div>
+			<div class="descubrirNuevos">Restaurantes nuevos<img src="{% static "nuevos.jpg" %}" alt="Nuevos" width="100%"height="75%"></div>
+			<div class="promociones">promociones<img src="{% static "promociones.jpeg" %}" alt="Nuevos" width="100%"height="75%"></div>
+
+			<div class="contacto">
+
+				<span class="datos"><p>adrianserrano.alu@iespacomolla.es</p><p>645709055</p><p>av.JoseMartinezGonzalez103</p><!--<a name="CONTACTA">--></span>
+				<span class="instagram"><img src="{% static "intagram.png"%}" alt="Nuevos" width="50%"height="75%"valing="center"></span>
+				<span class="facebook"><img src="{% static "facebook.png"%}" alt="Nuevos" width="50%"height="75%"valing="center"></span>
+				<span class="twitter"><img src="{% static "twitter.png"%}" alt="Nuevos" width="50%"height="75%"valing="center"></span>
+				<span class="nuevoRest"><p>¿Quieres que tu restaurante esté registrado en nuestra página?</p><p><u>pincha aquí</u></p></span>
+
+			</div>
+
+
+	</body>
+
+
+</html>

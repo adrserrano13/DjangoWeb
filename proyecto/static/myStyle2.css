@@ -1,0 +1,12 @@
+.encabezado{display:inline-block;height:146px;width:100%;background-color:lightcoral;position:static;}
+.botonesEncabezado{width:auto;height:auto;display:inline-block;background-color:#696969;border-style:inset;color:#FFF5EE;font-size:35px;text-align:center;}
+.contenedor{position:absolute;width:450px;left:700px;top:230px;}
+.titulo{display:inline-block;height:100px;width:100%;background-color:lightcoral;color:#FFF5EE;border-style:inset;}
+.registro{display:grid;}
+.boton{display:inline;}
+.fotos{display:inline-block;position:relative;left:900px;top:100px;text-align:center;border:3px;border-color:#8B0000; }
+
+
+
+
+body{background-image:url("fondo.jpg");background-repeat:repeat;background-position:60%40%;background-size:110%;}

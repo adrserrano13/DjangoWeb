@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="{% static "myStyle2.css" %}">
+	</head>
+
+	<body>
+
+			<div class="encabezado">
+				<span><img src="{% static "logo.png"%}" alt="logo" width="18%" height="100%"></span>
+				<span class="botonesEncabezado" style="position:absolute;left:700px;top:70px">CONTACTA</span>
+				<span class="botonesEncabezado" style="position:absolute;left:1000px;top:70px">UBICACIÓN</span>
+				<span class="botonesEncabezado" style="position:absolute;left:1300px;top:70px">REGISTRO</span>
+			</div>
+
+
+		<div class="fotos">
+
+			{%for x in foto%}
+
+				<form action="restaurante" method="get">
+				<img src="{%static ""%}{{x.foto}}" width="400px" heigth="400px">
+				<br>{{x.nombre}}<br>  
+				{{x.valoracion}}<br><br>
+			{%endfor%}
+			<a href="http://localhost:8000/inicio/" method="get">Volver</a></span>
+
+		</div>
+		
+
+
+	</body>
+</html>
